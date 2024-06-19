@@ -50,9 +50,6 @@ importers:
       jsonwebtoken:
         specifier: ^9.0.2
         version: 9.0.2
-      ngx-cookie-service:
-        specifier: ^18.0.0
-        version: 18.0.0(@angular/common@18.0.3(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7))
       passport:
         specifier: ^0.7.0
         version: 0.7.0
@@ -168,20 +165,6 @@ packages:
   '@angular-devkit/schematics@17.1.2':
     resolution: {integrity: sha512-8S9RuM8olFN/gwN+mjbuF1CwHX61f0i59EGXz9tXLnKRUTjsRR+8vVMTAmX0dvVAT5fJTG/T69X+HX7FeumdqA==}
     engines: {node: ^18.13.0 || >=20.9.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
-
-  '@angular/common@18.0.3':
-    resolution: {integrity: sha512-lmT9QbWHduqzpsB0osQFHeSwvQB1iUeNwTVUyMtcs6i46l4qOPtAt2/9DvHUWEUp01EBDxyi385ZI3vD+FHH/w==}
-    engines: {node: ^18.19.1 || ^20.11.1 || >=22.0.0}
-    peerDependencies:
-      '@angular/core': 18.0.3
-      rxjs: ^6.5.3 || ^7.4.0
-
-  '@angular/core@18.0.3':
-    resolution: {integrity: sha512-376hijhEqNpeA+qKncpVTIaZXRdBT6RctEBnFhJ2l57aHPH5S3oaSBQu1k3TEi07FlKOD4XF1+NzX9dvdup1eg==}
-    engines: {node: ^18.19.1 || ^20.11.1 || >=22.0.0}
-    peerDependencies:
-      rxjs: ^6.5.3 || ^7.4.0
-      zone.js: ~0.14.0
 
   '@babel/code-frame@7.24.7':
     resolution: {integrity: sha512-BcYH1CVJBO9tvyIZ2jVeXgSIMvGZ2FDRvDdOIVQyuklNKSsx+eppDEBq/g47Ayw+RqNFE+URvOShmf+f/qwAlA==}
@@ -2357,12 +2340,6 @@ packages:
   neo-async@2.6.2:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
 
-  ngx-cookie-service@18.0.0:
-    resolution: {integrity: sha512-hkkUckzZTXXWtFgvVkT2hg6mwYMLXioXDZWBsVCOy9gYkADjsj0N5VViO7eo2izQ0VcMPd/Etog1trf/T4oZMQ==}
-    peerDependencies:
-      '@angular/common': ^18.0.0-rc.0
-      '@angular/core': ^18.0.0-rc.0
-
   node-abort-controller@3.1.1:
     resolution: {integrity: sha512-AGK2yQKIjRuqnc6VkX2Xj5d+QW8xZ87pa1UK6yA6ouUyuxfHuMP6umE5QK7UmTeOAymo+Zx1Fxiuw9rVx8taHQ==}
 
@@ -3307,9 +3284,6 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
 
-  zone.js@0.14.7:
-    resolution: {integrity: sha512-0w6DGkX2BPuiK/NLf+4A8FLE43QwBfuqz2dVgi/40Rj1WmqUskCqj329O/pwrqFJLG5X8wkeG2RhIAro441xtg==}
-
 snapshots:
 
   '@ampproject/remapping@2.3.0':
@@ -3348,18 +3322,6 @@ snapshots:
       rxjs: 7.8.1
     transitivePeerDependencies:
       - chokidar
-
-  '@angular/common@18.0.3(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1)':
-    dependencies:
-      '@angular/core': 18.0.3(rxjs@7.8.1)(zone.js@0.14.7)
-      rxjs: 7.8.1
-      tslib: 2.6.3
-
-  '@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7)':
-    dependencies:
-      rxjs: 7.8.1
-      tslib: 2.6.3
-      zone.js: 0.14.7
 
   '@babel/code-frame@7.24.7':
     dependencies:
@@ -6033,12 +5995,6 @@ snapshots:
 
   neo-async@2.6.2: {}
 
-  ngx-cookie-service@18.0.0(@angular/common@18.0.3(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7)):
-    dependencies:
-      '@angular/common': 18.0.3(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1)
-      '@angular/core': 18.0.3(rxjs@7.8.1)(zone.js@0.14.7)
-      tslib: 2.6.3
-
   node-abort-controller@3.1.1: {}
 
   node-addon-api@5.1.0: {}
@@ -6917,5 +6873,3 @@ snapshots:
   yn@3.1.1: {}
 
   yocto-queue@0.1.0: {}
-
-  zone.js@0.14.7: {}
